@@ -13,11 +13,12 @@ class GetStartedPage extends StatelessWidget {
             width: double.infinity,
             height: double.infinity,
             decoration: BoxDecoration(
-                image: DecorationImage(
-              image: AssetImage(
-                'assets/image_getstarted.png',
+              image: DecorationImage(
+                image: AssetImage(
+                  'assets/image_getstarted.png',
+                ),
               ),
-            )),
+            ),
           ),
           Center(
             child: Column(
