@@ -15,12 +15,13 @@ class _SplashPageState extends State<SplashPage> {
   @override
   void initState() {
     Timer(Duration(seconds: 3), () {
-      Navigator.push(
-        context,
-        MaterialPageRoute(
-          builder: (context) => GetStartedPage(),
-        ),
-      );
+      // Navigator.push(
+      //   context,
+      //   MaterialPageRoute(
+      //     builder: (context) => GetStartedPage(),
+      //   ),
+      // );
+      Navigator.pushNamed(context, '/get-started');
     });
     super.initState();
   }

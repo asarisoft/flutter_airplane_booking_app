@@ -41,7 +41,7 @@ class GetStartedPage extends StatelessWidget {
                   margin: EdgeInsets.only(top: 50, bottom: 80),
                   decoration: BoxDecoration(
                     color: kPrimaryColor,
-                    borderRadius: BorderRadius.circular(17),
+                    borderRadius: BorderRadius.circular(defaultRadius),
                   ),
                   child: TextButton(
                     onPressed: () {},
