@@ -31,8 +31,10 @@ class GetStartedPage extends StatelessWidget {
                 SizedBox(height: 10),
                 Text(
                   'Explore new world with us and let \nyourself get an amazing experiences',
-                  style:
-                      whiteTextStyle.copyWith(fontSize: 16, fontWeight: light),
+                  style: whiteTextStyle.copyWith(
+                    fontSize: 16,
+                    fontWeight: light,
+                  ),
                   textAlign: TextAlign.center,
                 ),
                 Container(
@@ -44,7 +46,9 @@ class GetStartedPage extends StatelessWidget {
                     borderRadius: BorderRadius.circular(defaultRadius),
                   ),
                   child: TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/sign-up');
+                    },
                     child: Text(
                       'Get Started',
                       style: whiteTextStyle.copyWith(
