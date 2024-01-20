@@ -110,6 +110,30 @@ class BonusPage extends StatelessWidget {
       );
     }
 
+    Widget startButton() {
+      return Container(
+        width: 220,
+        height: 55,
+        margin: EdgeInsets.only(top: 50),
+        child: TextButton(
+          onPressed: () {},
+          style: TextButton.styleFrom(
+            backgroundColor: kPrimaryColor,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(defaultRadius),
+            ),
+          ),
+          child: Text(
+            'Start Fly Now',
+            style: whiteTextStyle.copyWith(
+              fontWeight: medium,
+              fontSize: 18,
+            ),
+          ),
+        ),
+      );
+    }
+
     return Scaffold(
       backgroundColor: kBackgroundColor,
       body: Center(
@@ -119,6 +143,7 @@ class BonusPage extends StatelessWidget {
             bonusCard(),
             bigTitle(),
             descriptionText(),
+            startButton(),
           ],
         ),
       ),
